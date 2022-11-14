@@ -16,9 +16,9 @@
 ### 4. Home Page
 
 <p align="center">
-<img src="/Screenshots/home.png" width=80%>
+<img src="/Screenshots/Home.png" width=80%>
 </p>
 
 <p align="center">
-<img src="/Screenshots/home-note.png" width=80%>
+<img src="/Screenshots/Home-note.png" width=80%>
 </p>
