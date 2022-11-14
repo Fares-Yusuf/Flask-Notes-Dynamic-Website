@@ -20,5 +20,5 @@
 </p>
 
 <p align="center">
-<img src="/Screenshots/Home-note.png" width=80%>
+<img src="/Screenshots/Home-Note.png" width=80%>
 </p>
