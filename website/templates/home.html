@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<center>
+    <img class="mt-4 mb-4" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72"
+        height="57">
+    <h1 class="fw-normal">Notes</h1>
+
+    <ul class="list-group list-group-flush" id="notes">
+        {% for note in user.notes %}
+        <li class="list-group-item">
+            <strong class="float-start">{{ note.data }}</strong>
+            <button type="button" class="btn-close float-end" onClick="deleteNote({{note.id}})">
+            </button>
+        </li>
+        {% endfor %}
+    </ul>
+    <br>
+
+    <form method="POST">
+        <textarea name="note" id="note" class="form-control"></textarea>
+        <br />
+        <div>
+            <button type="submit" class="btn btn-primary">Add Note</button>
+        </div>
+    </form>
+</center>
+<script>
+    function deleteNote(noteId) {
+        fetch("/delete-note", {
+            method: "POST",
+            body: JSON.stringify({ noteId: noteId }),
+        }).then((_res) => {
+            window.location.href = "/";
+        });
+    }
+</script>
+{% endblock %}
