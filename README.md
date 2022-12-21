@@ -1,5 +1,5 @@
 # Notes-Dynamic-Website
-## A dynamic website made using Python Flask as the framework and SQLAlchemy SQLight for the database.
+## A dynamic website made using Python Flask as the framework and SQLAlchemy SQLite for the database.
 ### The user can create account and add/view/delete notes saved in the database for his account.
 
 ### 1. Sign-up page
